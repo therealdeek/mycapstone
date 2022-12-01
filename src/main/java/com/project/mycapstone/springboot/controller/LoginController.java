@@ -23,7 +23,7 @@ public class LoginController {
     @Autowired
     private UsersDAO usersDAO;
 
-    @RequestMapping(value = "/user/createuser", method = RequestMethod.GET)
+    @RequestMapping(value = "/users/createusers", method = RequestMethod.GET)
     public ModelAndView createUser(CreateUserForm form) {
         ModelAndView response = new ModelAndView();
         response.setViewName("login_pages/create_user");
@@ -32,7 +32,7 @@ public class LoginController {
         return response;
     }
 
-    @RequestMapping(value = "/user/createuser", method = RequestMethod.POST)
+    @RequestMapping(value = "/users/createusers", method = RequestMethod.POST)
     public ModelAndView createUserSubmit(@Valid CreateUserForm form, BindingResult bindingResult) {
         ModelAndView response = new ModelAndView();
         response.setViewName("login_pages/create_user");
@@ -49,6 +49,7 @@ public class LoginController {
             Users users = new Users();
 
             users.setFirstName(form.getFirstName());
+            users.setLastName(form.getLastName());
             users.setEmail(form.getEmail());
             users.setPassword(form.getPassword());
             users.setAddress(form.getAddress());
