@@ -141,3 +141,124 @@ This generated password is for development use only. Your security configuration
 2022-12-03 15:27:20.781  INFO 6434 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-12-03 15:27:20.785  INFO 6434 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-12-03 15:27:20.792  INFO 6434 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-03 15:32:47.724  INFO 6623 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Starting MycapstoneApplication using Java 11.0.17 on MacBook-Air.lan with PID 6623 (/Users/therealdee_k/IdeaProjects/mycapstone/target/classes started by therealdee_k in /Users/therealdee_k/IdeaProjects/mycapstone)
+2022-12-03 15:32:47.725 DEBUG 6623 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-03 15:32:47.725  INFO 6623 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-03 15:32:47.750  INFO 6623 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-03 15:32:47.751  INFO 6623 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-03 15:32:48.113  INFO 6623 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-03 15:32:48.141  INFO 6623 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2022-12-03 15:32:48.519  INFO 6623 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-03 15:32:48.526  INFO 6623 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-03 15:32:48.526  INFO 6623 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-03 15:32:48.646  INFO 6623 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-12-03 15:32:48.653  INFO 6623 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-03 15:32:48.653  INFO 6623 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 902 ms
+2022-12-03 15:32:48.748  INFO 6623 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-03 15:32:48.779  INFO 6623 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-03 15:32:48.870  INFO 6623 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-03 15:32:48.922  INFO 6623 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-03 15:32:49.156  INFO 6623 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-03 15:32:49.169  INFO 6623 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-03 15:32:49.533  INFO 6623 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-03 15:32:49.537  INFO 6623 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-03 15:32:49.563  WARN 6623 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-03 15:32:49.802  WARN 6623 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6ff482f9-1cab-4ccc-bec6-d34ef3a3c66a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-03 15:32:49.907  INFO 6623 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6869d745, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45adfd0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c31400, org.springframework.security.web.header.HeaderWriterFilter@1d7b49d4, org.springframework.security.web.authentication.logout.LogoutFilter@209b1ffd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18d214d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59e76e6d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@109b0294, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14231e16, org.springframework.security.web.session.SessionManagementFilter@48cafaa6, org.springframework.security.web.access.ExceptionTranslationFilter@61e7a0d3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@181e59a4]
+2022-12-03 15:32:50.032  INFO 6623 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-12-03 15:32:50.235  INFO 6623 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-03 15:32:50.262  INFO 6623 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-03 15:32:50.268  INFO 6623 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Started MycapstoneApplication in 2.781 seconds (JVM running for 3.061)
+2022-12-03 15:33:07.523  INFO 6623 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-03 15:33:07.524  INFO 6623 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-03 15:33:07.528  INFO 6623 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-12-03 15:46:42.898  INFO 6623 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-03 15:46:42.906  INFO 6623 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-03 15:46:42.925  INFO 6623 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-03 15:46:52.241  INFO 6833 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Starting MycapstoneApplication using Java 11.0.17 on MacBook-Air.lan with PID 6833 (/Users/therealdee_k/IdeaProjects/mycapstone/target/classes started by therealdee_k in /Users/therealdee_k/IdeaProjects/mycapstone)
+2022-12-03 15:46:52.241 DEBUG 6833 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-03 15:46:52.241  INFO 6833 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-03 15:46:52.272  INFO 6833 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-03 15:46:52.272  INFO 6833 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-03 15:46:52.641  INFO 6833 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-03 15:46:52.667  INFO 6833 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2022-12-03 15:46:53.050  INFO 6833 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-03 15:46:53.057  INFO 6833 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-03 15:46:53.058  INFO 6833 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-03 15:46:53.179  INFO 6833 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-12-03 15:46:53.186  INFO 6833 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-03 15:46:53.186  INFO 6833 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 914 ms
+2022-12-03 15:46:53.299  INFO 6833 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-03 15:46:53.330  INFO 6833 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-03 15:46:53.421  INFO 6833 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-03 15:46:53.477  INFO 6833 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-03 15:46:53.702  INFO 6833 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-03 15:46:53.712  INFO 6833 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-03 15:46:54.095  INFO 6833 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-03 15:46:54.099  INFO 6833 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-03 15:46:54.123  WARN 6833 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-03 15:46:54.350  WARN 6833 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 30404bf3-c8db-442b-9e32-e7d14b919396
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-03 15:46:54.417  INFO 6833 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68e5088a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24eb7cf5, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fc06fc3, org.springframework.security.web.header.HeaderWriterFilter@2dee1479, org.springframework.security.web.authentication.logout.LogoutFilter@5e1e44f8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e12b5ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@634f93a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76e7b13d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c59e8c5, org.springframework.security.web.session.SessionManagementFilter@2beacca9, org.springframework.security.web.access.ExceptionTranslationFilter@3c7155ce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c46e21]
+2022-12-03 15:46:54.512  INFO 6833 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-12-03 15:46:54.624  INFO 6833 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-03 15:46:54.651  INFO 6833 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-03 15:46:54.657  INFO 6833 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Started MycapstoneApplication in 2.651 seconds (JVM running for 2.93)
+2022-12-03 15:47:02.336  INFO 6833 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-03 15:47:02.336  INFO 6833 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-03 15:47:02.339  INFO 6833 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-03 15:47:22.620  WARN 6833 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "createuser"]
+2022-12-03 15:48:08.702  INFO 6833 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-03 15:48:08.706  INFO 6833 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-03 15:48:08.712  INFO 6833 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-03 15:48:15.068  INFO 6851 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Starting MycapstoneApplication using Java 11.0.17 on MacBook-Air.lan with PID 6851 (/Users/therealdee_k/IdeaProjects/mycapstone/target/classes started by therealdee_k in /Users/therealdee_k/IdeaProjects/mycapstone)
+2022-12-03 15:48:15.068 DEBUG 6851 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-03 15:48:15.068  INFO 6851 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-12-03 15:48:15.104  INFO 6851 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-03 15:48:15.104  INFO 6851 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-03 15:48:15.491  INFO 6851 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-03 15:48:15.526  INFO 6851 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2022-12-03 15:48:15.972  INFO 6851 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-03 15:48:15.980  INFO 6851 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-03 15:48:15.980  INFO 6851 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-03 15:48:16.126  INFO 6851 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-12-03 15:48:16.132  INFO 6851 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-03 15:48:16.132  INFO 6851 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1028 ms
+2022-12-03 15:48:16.235  INFO 6851 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-03 15:48:16.261  INFO 6851 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-03 15:48:16.344  INFO 6851 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-03 15:48:16.455  INFO 6851 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-03 15:48:16.965  INFO 6851 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-03 15:48:16.991  INFO 6851 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-03 15:48:17.859  INFO 6851 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-03 15:48:17.868  INFO 6851 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-03 15:48:17.903  WARN 6851 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-03 15:48:18.162  WARN 6851 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2ce49b88-23ad-4520-adc4-7ce4554d8bca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-12-03 15:48:18.246  INFO 6851 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ea0ea1b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@667e894c, org.springframework.security.web.context.SecurityContextPersistenceFilter@68dad6e2, org.springframework.security.web.header.HeaderWriterFilter@727c78e8, org.springframework.security.web.authentication.logout.LogoutFilter@58261a8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b797f7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b415d5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4970778f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@618cfbdd, org.springframework.security.web.session.SessionManagementFilter@72ffa411, org.springframework.security.web.access.ExceptionTranslationFilter@6ab3084a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2732e41b]
+2022-12-03 15:48:18.386  INFO 6851 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-12-03 15:48:18.542  INFO 6851 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-03 15:48:18.571  INFO 6851 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-03 15:48:18.577  INFO 6851 --- [restartedMain] c.p.mycapstone.MycapstoneApplication     : Started MycapstoneApplication in 3.86 seconds (JVM running for 4.241)
+2022-12-03 15:48:30.155  INFO 6851 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-03 15:48:30.155  INFO 6851 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-03 15:48:30.158  INFO 6851 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-03 15:48:35.505 DEBUG 6851 --- [http-nio-8080-exec-3] c.p.m.s.controller.LoginController       : This is in the GET method for create user
+2022-12-03 15:49:39.181 DEBUG 6851 --- [http-nio-8080-exec-6] c.p.m.s.controller.LoginController       : This is in the POST method for create user
+2022-12-03 15:49:39.200 DEBUG 6851 --- [http-nio-8080-exec-6] c.p.m.s.controller.LoginController       : CreateUserForm(email=porky1@acme.com, password=password, confirmPassword=null, firstName=Porky, lastName=Pig, address=100 Acme Road, city=Holly, state=CA, zip=77788)
+2022-12-03 15:51:31.935  INFO 6851 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-03 15:51:31.940  INFO 6851 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-03 15:51:31.949  INFO 6851 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

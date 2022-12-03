@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 // url to the login page
                     .loginPage("/users/login")
-                // url login page will submit to with action user/login method POST
+                // url login page will submit to with action users/login method POST
                     .loginProcessingUrl("/users/login")
                     .defaultSuccessUrl("/")
                 .and()
