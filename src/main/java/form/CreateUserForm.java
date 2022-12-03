@@ -37,6 +37,4 @@ public class CreateUserForm {
     @Length(max = 5, message = "Zip must be 5 characters.")
     private String zip;
 
-    @Length(max = 10, message = "Phone must be 10 characters or less.")
-    private String phone;
 }
