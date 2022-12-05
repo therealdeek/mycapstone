@@ -1,4 +1,4 @@
-package validation;
+package com.project.validation;
 
 
 import java.lang.annotation.Documented;
@@ -16,7 +16,7 @@ import javax.validation.Payload;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EmailUnique {
 
-    String message() default "{UsersEmailUnique}";
+    String message() default "{UserEmailUnique}";
 
     Class<?>[] groups() default {};
 

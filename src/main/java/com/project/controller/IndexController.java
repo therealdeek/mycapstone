@@ -1,11 +1,9 @@
-package com.project.mycapstone.springboot.controller;
+package com.project.controller;
 
 import java.util.List;
-import java.util.Map;
 
-import com.project.mycapstone.springboot.database.dao.UsersDAO;
-import com.project.mycapstone.springboot.database.entity.Users;
-import lombok.extern.java.Log;
+import com.project.database.dao.UsersDAO;
+import com.project.database.entity.Users;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

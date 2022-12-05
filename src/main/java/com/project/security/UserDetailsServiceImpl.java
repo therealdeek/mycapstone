@@ -1,9 +1,9 @@
-package security;
+package com.project.security;
 
-import com.project.mycapstone.springboot.database.dao.UserRoleDAO;
-import com.project.mycapstone.springboot.database.dao.UsersDAO;
-import com.project.mycapstone.springboot.database.entity.UserRole;
-import com.project.mycapstone.springboot.database.entity.Users;
+import com.project.database.dao.UserRoleDAO;
+import com.project.database.dao.UsersDAO;
+import com.project.database.entity.UserRole;
+import com.project.database.entity.Users;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +12,13 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+@Component
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     public static final Logger LOG = LoggerFactory.getLogger(UserDetailsServiceImpl.class);

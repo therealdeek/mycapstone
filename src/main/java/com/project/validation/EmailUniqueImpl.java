@@ -1,4 +1,4 @@
-package validation;
+package com.project.validation;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -8,8 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.project.mycapstone.springboot.database.dao.UsersDAO;
-import com.project.mycapstone.springboot.database.entity.Users;
+import com.project.database.dao.UsersDAO;
+import com.project.database.entity.Users;
 
 
 public class EmailUniqueImpl implements ConstraintValidator<EmailUnique, String> {
@@ -17,7 +17,7 @@ public class EmailUniqueImpl implements ConstraintValidator<EmailUnique, String>
     public static final Logger LOG = LoggerFactory.getLogger(EmailUniqueImpl.class);
 
     @Autowired
-    private UsersDAO usersDao;
+    private UsersDAO usersDAO;
 
     @Override
     public void initialize(EmailUnique constraintAnnotation) {
@@ -30,7 +30,7 @@ public class EmailUniqueImpl implements ConstraintValidator<EmailUnique, String>
             return true;
         }
 
-        Users users = usersDao.findByEmail(value);
+        Users users = usersDAO.findByEmail(value);
 
         return ( users == null );
     }

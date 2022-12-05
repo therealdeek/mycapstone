@@ -1,7 +1,8 @@
-package com.project.mycapstone.springboot.config;
+package com.project.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -18,28 +19,32 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(final HttpSecurity http) throws Exception {
         http
                 .csrf().disable()
-                .authorizeRequests()
+                    .authorizeRequests()
                     .antMatchers("/pub/**", "/users/**", "/", "/index").permitAll()
                     .anyRequest().authenticated()
                     .and()
                 .formLogin()
-                // url to the login page
                     .loginPage("/users/login")
-                // url login page will submit to with action users/login method POST
-                    .loginProcessingUrl("/users/login")
+                    .loginProcessingUrl("/users/loginpost")
                     .defaultSuccessUrl("/")
-                .and()
+                    .and()
                 .logout()
                     .invalidateHttpSession(true)
                     .logoutUrl("/users/logout")
-                // url to send browser after user has logged out
                     .logoutSuccessUrl("/index");
 
-
     }
 
-    @Bean
+    @Bean(name = "passwordEncoder")
     public PasswordEncoder getPassWordEncoder() {
         return new BCryptPasswordEncoder();
+
+
+    }
+    @Bean
+    @Override
+    public AuthenticationManager authenticationManagerBean() throws Exception{
+        return super.authenticationManagerBean();
     }
 }
+

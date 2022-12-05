@@ -1,4 +1,4 @@
-package form;
+package com.project.form;
 
 import lombok.Getter;
 import lombok.Setter;

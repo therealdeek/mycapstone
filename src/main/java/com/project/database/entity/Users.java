@@ -1,4 +1,4 @@
-package com.project.mycapstone.springboot.database.entity;
+package com.project.database.entity;
 
 import javax.persistence.*;
 

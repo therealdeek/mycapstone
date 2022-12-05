@@ -1,12 +1,8 @@
-package com.project.mycapstone.springboot.database.dao;
+package com.project.database.dao;
 
 
-import java.util.List;
-import java.util.Map;
-
-import com.project.mycapstone.springboot.database.entity.Users;
+import com.project.database.entity.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 
