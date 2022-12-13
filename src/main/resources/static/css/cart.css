@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(53, 207, 207);
+
+}
+
+.navbar {
+    font-size: 20px;
+    top: 0;
+    left: 0;
+
+}
+
+.navbar-light .navbar-toggler {
+    border: 0;
+    outline: 0;
+}
+
+/* Footer */
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+    color: coral;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+/*footer*/
+
+footer {
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+footer h3 {
+    color: aliceblue;
+    font-weight: 500;
+}
+
+footer p {
+    color: aliceblue;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Cart*/
+
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50 px;
+}
+
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50 px;
+    padding-bottom: 100px;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightcoral;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+}
+
+.price{
+    width: 15%;
+    border-bottom: 4px solid lightcoral;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 15%;
+    border-bottom: 4px solid lightcoral;
+    display: flex;
+    align-items: center;
+}

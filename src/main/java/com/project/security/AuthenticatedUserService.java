@@ -1,8 +1,7 @@
 package com.project.security;
 
-import com.project.database.dao.UsersDAO;
+import com.project.database.entity.dao.UsersDAO;
 import com.project.database.entity.Users;
-import org.hibernate.validator.internal.util.stereotypes.Lazy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;

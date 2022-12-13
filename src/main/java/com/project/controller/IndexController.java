@@ -1,8 +1,6 @@
 package com.project.controller;
 
-import java.util.List;
-
-import com.project.database.dao.UsersDAO;
+import com.project.database.entity.dao.UsersDAO;
 import com.project.database.entity.Users;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
@@ -141,21 +139,6 @@ public class IndexController {
 
         return u;
 
-    }
-
-    @ResponseBody
-    @RequestMapping(value = {"/course/all"}, method = RequestMethod.GET)
-    public List<Users> allUsers() {
-        log.error("this is an error");
-        log.warn("this is a warning");
-        log.info("this is info");
-        log.debug("this is debug");
-
-        System.out.println("This is never okay!"); //this doesn't provide any information but the print out only
-
-        List<Users> users = usersDAO.findAll();
-
-        return users;
     }
 
 }

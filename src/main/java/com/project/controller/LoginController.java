@@ -1,8 +1,8 @@
 package com.project.controller;
 
 
-import com.project.database.dao.UserRoleDAO;
-import com.project.database.dao.UsersDAO;
+import com.project.database.entity.dao.UserRoleDAO;
+import com.project.database.entity.dao.UsersDAO;
 import com.project.database.entity.UserRole;
 import com.project.database.entity.Users;
 import com.project.form.CreateUserForm;
@@ -82,6 +82,7 @@ public class LoginController {
             users.setPassword(encodedPassword);
 
             users.setFirstName(form.getFirstName());
+            users.setLastName(form.getLastName());
             users.setEmail(form.getEmail());
             users.setAddress(form.getAddress());
             users.setCity(form.getCity());

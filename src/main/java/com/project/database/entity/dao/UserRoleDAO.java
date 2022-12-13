@@ -1,4 +1,4 @@
-package com.project.database.dao;
+package com.project.database.entity.dao;
 
 import java.util.List;
 

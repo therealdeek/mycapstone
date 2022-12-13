@@ -1,7 +1,7 @@
 package com.project.security;
 
-import com.project.database.dao.UserRoleDAO;
-import com.project.database.dao.UsersDAO;
+import com.project.database.entity.dao.UserRoleDAO;
+import com.project.database.entity.dao.UsersDAO;
 import com.project.database.entity.UserRole;
 import com.project.database.entity.Users;
 import org.slf4j.Logger;
