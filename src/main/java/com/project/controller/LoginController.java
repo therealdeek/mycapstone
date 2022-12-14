@@ -1,6 +1,7 @@
 package com.project.controller;
 
 
+import com.project.database.entity.Products;
 import com.project.database.entity.dao.UserRoleDAO;
 import com.project.database.entity.dao.UsersDAO;
 import com.project.database.entity.UserRole;
@@ -53,57 +54,4 @@ public class LoginController {
         // directely to the browser with no view
     }
 
-
-    @RequestMapping(value = "/users/createusers", method = RequestMethod.GET)
-    public ModelAndView createUser() {
-        ModelAndView response = new ModelAndView();
-        response.setViewName("login_pages/create_user");
-
-        log.debug("This is in the GET method for create user");
-        return response;
-    }
-
-    @RequestMapping(value = "/users/createusers", method = RequestMethod.POST)
-    public ModelAndView createUserSubmit(@Valid CreateUserForm form, BindingResult bindingResult) {
-        ModelAndView response = new ModelAndView();
-        response.setViewName("login_pages/create_user");
-        log.debug("This is in the POST method for create user");
-
-        log.debug(form.toString());
-
-        for (ObjectError e : bindingResult.getAllErrors()) {
-            log.debug(e.getObjectName() + " : " + e.getDefaultMessage());
-        }
-
-        if ( ! bindingResult.hasErrors()) {
-            Users users = new Users();
-
-            String encodedPassword = passwordEncoder.encode(form.getPassword());
-            users.setPassword(encodedPassword);
-
-            users.setFirstName(form.getFirstName());
-            users.setLastName(form.getLastName());
-            users.setEmail(form.getEmail());
-            users.setAddress(form.getAddress());
-            users.setCity(form.getCity());
-            users.setState(form.getState());
-            users.setZip(form.getZip());
-            users.setCreateDate(new Date());
-
-            usersDAO.save(users);
-
-            UserRole ur = new UserRole();
-            ur.setRoleName("USER");
-            ur.setUserId(users.getId());
-
-            userRoleDao.save(ur);
-
-
-        } else {
-            response.addObject("bindingResult", bindingResult);
-            response.addObject("com/project/form", form);
-        }
-
-        return response;
-    }
 }

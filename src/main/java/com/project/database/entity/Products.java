@@ -35,5 +35,5 @@ public class Products {
     private String prDesc;
 
     @Column(name = "avatar")
-    private Blob avatar;
+    private String avatar;
 }

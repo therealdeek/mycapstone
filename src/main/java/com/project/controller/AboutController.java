@@ -1,6 +1,5 @@
 package com.project.controller;
 
-import com.project.database.entity.OrderDetails;
 import com.project.database.entity.dao.OrderDetailsDAO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @Controller
-public class CartController {
+
+public class AboutController {
 
     @Autowired
     private OrderDetailsDAO orderDetailsDAO;
@@ -20,15 +20,14 @@ public class CartController {
     @Value("${spring.datasource.url}")
     private String variable;
 
-    @RequestMapping(value = {"/cart"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/about"}, method = RequestMethod.GET)
     public ModelAndView orderDetails() {
-        // this method is called when /cart is in the URL
+        // this method is called when /about is in the URL
         log.info("Index controller products request method");
 
         ModelAndView response = new ModelAndView();
-        response.setViewName("cart");
+        response.setViewName("about");
 
         return response;
     }
-
 }

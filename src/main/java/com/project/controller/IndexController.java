@@ -14,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Slf4j
 @Controller
@@ -32,7 +33,8 @@ public class IndexController {
 
     @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
     public ModelAndView slash(@RequestParam(required = false) String firstName,
-                              @RequestParam(required = false) String email) {
+                              @RequestParam(required = false) String email,
+                              @RequestParam(required = false) String zip) {
 
         ModelAndView response = new ModelAndView();
         response.setViewName("index");
@@ -48,6 +50,12 @@ public class IndexController {
 
         response.addObject("firstNameKey", firstName);
         response.addObject("emailKey", email);
+        response.addObject("zipKey", zip);
+
+        List<Users> users = usersDAO.findByZip(zip);
+        for (Users u : users) {
+            System.out.println(u.getFirstName());
+        }
 
         return response;
 
