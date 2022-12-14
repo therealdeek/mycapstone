@@ -19,7 +19,7 @@
 
     <!--Navigation-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 fixed-top">
         <div class="container">
             <img src="pub/images/Community Logo.png" alt="Community Logo" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Support Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" href="login">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Signup</a>
@@ -59,11 +59,20 @@
             </div>
         </div>
     </nav>
+<div class="container">
+    <div class="row mt-3 mb-1">
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+</div>
 
 <div class="container">
     <div class="row mt-3 mb-1">
         <h2>Create user</h2>
     </div>
+
 
         <c:if test="${bindingResult.hasErrors()}">
           <c:forEach items="${bindingResult.getAllErrors()}" var="error">
@@ -71,7 +80,7 @@
           </c:forEach>
         </c:if>
 
-<form action="/users/createusers" method="POST">
+<form action="/createusers" method="POST">
   <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" value="${form.email}" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -91,23 +100,25 @@
       </div>
 
       <div class="row">
-        <div class="mb-3">
+        <div class="mb-3 col-6">
           <label for="firstName" class="form-label">First Name</label>
           <input type="text" value="${form.firstName}"name="firstName" class="form-control" id="firstName" aria-describedby="firstNameHelp">
           <label class="firstNameHelp" for="form-text">Please give me your first name</label>
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 col-6">
           <label for="lastName" class="form-label">Last Name</label>
           <input type="text" value="${form.lastName}"name="lastName" class="form-control" id="lastName" aria-describedby="lastNameHelp">
           <label class="lastNameHelp" for="form-text">Please give me your last name</label>
         </div>
       </div>
 
-      <div class="mb-3 col-4">
-        <label for="address" class="form-label">Address</label>
-        <input type="text" value="${form.address}"name="address" class="form-control" id="address" aria-describedby="addressHelp">
-        <label class="addressHelp" for="form-text">Please give me your address</label>
+      <div class="row">
+          <div class="mb-3 col-6">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" value="${form.address}"name="address" class="form-control" id="address" aria-describedby="addressHelp">
+            <label class="addressHelp" for="form-text">Please give me your address</label>
+          </div>
       </div>
 
       <div class="row">
@@ -128,21 +139,13 @@
           <input type="text" value="${form.zip}"name="zip" class="form-control" id="zip" aria-describedby="zipHelp">
           <label class="zipHelp" for="form-text">Enter Your Zip</label>
         </div>
-
-        <div class="mb-3 col-4">
-                  <label for="avatar" class="form-label">Avatar</label>
-                  <input type="text" value="${form.zip}"name="avatar" class="form-control" id="avatar" aria-describedby="avatarHelp">
-                  <label class="avatarHelp" for="form-text">Enter url path</label>
-                </div>
-
-        </div>
-
       </div>
 
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
+
 
 
 <footer class="mt-4 py-2">

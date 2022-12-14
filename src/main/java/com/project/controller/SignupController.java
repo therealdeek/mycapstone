@@ -14,8 +14,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -39,8 +41,8 @@ public class SignupController {
     @Value("${spring.datasource.url}")
     private String variable;
 
-    @RequestMapping(value = "/createusers", method = RequestMethod.GET)
-    public ModelAndView createUser() {
+    @RequestMapping(value = "/createusers", produces = "application/json", method = RequestMethod.GET)
+    public ModelAndView createUsers() {
         ModelAndView response = new ModelAndView();
         response.setViewName("login_pages/createusers");
 
@@ -48,8 +50,10 @@ public class SignupController {
         return response;
     }
 
+
+
     @RequestMapping(value = "/createusers", method = RequestMethod.POST)
-    public ModelAndView createUserSubmit(@Valid CreateUserForm form, BindingResult bindingResult) {
+    public ModelAndView createUsers(@Valid CreateUserForm form, BindingResult bindingResult) {
         ModelAndView response = new ModelAndView();
         response.setViewName("login_pages/createusers");
         log.debug("This is in the POST method for create user");
@@ -62,7 +66,6 @@ public class SignupController {
 
         if ( ! bindingResult.hasErrors()) {
             Users users = new Users();
-            Products products = new Products();
 
             String encodedPassword = passwordEncoder.encode(form.getPassword());
             users.setPassword(encodedPassword);
