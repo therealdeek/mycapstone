@@ -14,6 +14,7 @@ My project involved creating an e-commerce store with some functionality. The te
 7. Hibernate
 8. GitHub, Atom, and SourceTree, respectively
 9. Trello
+10. IntelliJ
 
 Highlights learned from the project include:
 
@@ -38,3 +39,4 @@ Below are some pictures of my e-commerce project:
 ![Screenshot 2022-12-15 at 2 17 51 AM](https://user-images.githubusercontent.com/57839004/207808174-3d33babf-a9ee-456c-9a79-ac8ce4c4577a.png)
 ![Screenshot 2022-12-15 at 2 17 32 AM](https://user-images.githubusercontent.com/57839004/207808227-e3399562-285a-458b-a01d-463a011d3cac.png)
 ![Screenshot 2022-12-15 at 2 17 12 AM](https://user-images.githubusercontent.com/57839004/207808254-768eb229-a875-4cba-abf1-93a5d15f9dea.png)
+<img width="913" alt="Screenshot 2022-12-15 at 2 36 23 AM" src="https://user-images.githubusercontent.com/57839004/207811991-7313fb4d-7bef-4c0a-a206-253920529190.png">
