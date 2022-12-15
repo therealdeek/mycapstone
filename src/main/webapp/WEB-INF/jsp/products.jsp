@@ -55,7 +55,7 @@
                         <a class="nav-link" href="follow">Support Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="loginsite">Login</a>
+                        <a class="nav-link" href="login">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="createusers">Signup</a>
@@ -79,7 +79,6 @@
             <p> Check out our latest available items for sale </p>
         </div>
 
-        <c:forEach items="${products}" var="products">
 
         <div class="row mx-auto container-fluid">
                 <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -92,8 +91,7 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <h5 class="p-name">Tee Shirt</h5>
-                    <p> ${products.pr_price}</p>
-                    <a href="/products?id=${products.price}" class="btn mt-auto btn-dark"></a>
+                    <h4 class="p-price">$15.00</h4>
                     <button class="buy-btn">Add to cart</button>
                 </div>
                 <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -138,7 +136,7 @@
 
 
         </div>
-        </c:forEach>
+
     </section>
 
 

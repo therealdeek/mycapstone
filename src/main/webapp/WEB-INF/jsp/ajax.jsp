@@ -2,6 +2,8 @@
 
 	<jsp:include page="include/header.jsp" />
 
+	<link href="pub/css/follow.css" rel="stylesheet">
+
 	<script>
 		$(document).ready(
 			function () {
