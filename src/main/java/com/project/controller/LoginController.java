@@ -16,6 +16,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
@@ -37,21 +38,36 @@ public class LoginController {
 
     // this method is request mapping to show the actual login JSP page.
     // the URL here in the mapping is the same URL configured in spring security .loginPage
-    @RequestMapping(value = {"/login"}, method = RequestMethod.GET)
+    @RequestMapping(value = "/users/login", method = RequestMethod.GET)
     public ModelAndView login() {
         ModelAndView response = new ModelAndView();
         response.setViewName("login_pages/login");
         return response;
     }
 
-    // in this situation we are returning the view name as a string without a model
-    @RequestMapping(value = "/users/example", method = RequestMethod.GET)
-    public String example() {
-        // so if the method returns just a string then that is considered to be the view name
-        return "login_pages/login";
+    @RequestMapping(value = "/users/editusers", method = RequestMethod.GET)
+    public ModelAndView editUser(@RequestParam Integer id) {
+        //incoming id is the id of the user we want to edit
+        ModelAndView response = new ModelAndView();
+        response.setViewName("login_pages/create_user");
 
-        // this is not to be confused with the @ResponseBody annotation, which would then return the string
-        // directely to the browser with no view
+        Users users = usersDAO.findById(id);
+
+        CreateUserForm form = new CreateUserForm();
+
+        form.setFirstName(users.getFirstName());
+        form.setLastName(users.getLastName());
+        form.setEmail(users.getEmail());
+        form.setAddress(users.getAddress());
+        form.setCity(users.getCity());
+        form.setState(users.getState());
+        form.setZip(users.getZip());
+
+
+        response.addObject("form", form);
+
+        log.debug("This is in the GET method for edit user");
+        return response;
     }
 
 }

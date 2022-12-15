@@ -8,11 +8,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Insert title here</title>
+    <title>Search</title>
 </head>
 
 <body>
-	<h1>Index Page ${name}</h1>
+	<h1>Search Page ${name}</h1>
 
     <form method="get" action="/">
         Users Email : <input type="text" name="usersEmail" value="${usersEmailKey}" style="margin-bottom:10px">
@@ -35,7 +35,7 @@
         <c:forEach items="${users}" var="users">
             <tr>
                 <td>${users.id}</td>
-                <td>${users.name}</td>
+                <td>${users.firstName}</td>
                 <td>${users.email}</td>
             </tr>
         </c:forEach>

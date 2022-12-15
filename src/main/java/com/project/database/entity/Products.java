@@ -25,15 +25,14 @@ public class Products {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "pr_name")
-    private String prName;
+    @Column(name = "name")
+    private String name;
 
-    @Column(name = "pr_price")
-    private Integer prPrice;
+    @Column(name = "price")
+    private Integer price;
 
-    @Column(name = "pr_desc")
-    private String prDesc;
+    @Column(name = "desc")
+    private String desc;
 
-    @Column(name = "avatar")
-    private String avatar;
+
 }

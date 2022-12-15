@@ -78,6 +78,9 @@
             <hr>
             <p> Check out our latest available items for sale </p>
         </div>
+
+        <c:forEach items="${products}" var="products">
+
         <div class="row mx-auto container-fluid">
                 <div class="product text-center col-lg-3 col-md-4 col-12">
                     <img class="img-fluid mb-3" src="pub/images/T-Shirt-removebg-preview.png" alt="">
@@ -89,7 +92,8 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <h5 class="p-name">Tee Shirt</h5>
-                    <h4 class="p-price">$15.00</h4>
+                    <p> ${products.pr_price}</p>
+                    <a href="/products?id=${products.price}" class="btn mt-auto btn-dark"></a>
                     <button class="buy-btn">Add to cart</button>
                 </div>
                 <div class="product text-center col-lg-3 col-md-4 col-12">
@@ -134,6 +138,7 @@
 
 
         </div>
+        </c:forEach>
     </section>
 
 

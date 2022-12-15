@@ -51,5 +51,5 @@ public class Users {
     @Column(name = "create_date", nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date createDate;
-
 }
+
