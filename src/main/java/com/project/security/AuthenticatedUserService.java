@@ -53,7 +53,7 @@ public class AuthenticatedUserService {
         return false;
     }
 
-    public Users getCurrentUser() {
+    public Users getCurrentUsers() {
         ServletRequestAttributes attr = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
         HttpSession session = attr.getRequest().getSession(true); // true == allow create
         Users users = (Users) session.getAttribute("user");

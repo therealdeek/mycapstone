@@ -42,7 +42,7 @@
                                 <a class="nav-link active" href="#">Cart</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Support Us</a>
+                                <a class="nav-link" href="follow">Support Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login">Login</a>

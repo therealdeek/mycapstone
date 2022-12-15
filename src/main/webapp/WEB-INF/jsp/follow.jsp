@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="pub/css/about.css" rel="stylesheet">
+    <link href="pub/css/follow.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/b049835cf5.js" crossorigin="anonymous"></script>
 
@@ -32,7 +32,7 @@
                         <a class="nav-link" href="index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About</a>
+                        <a class="nav-link" href="about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="products">Products</a>
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="cart">Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="follow">Support Us</a>
+                        <a class="nav-link active" href="#">Support Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login">Login</a>
@@ -63,7 +63,7 @@
 <section id="home">
     <div class="container">
         <div class="col-8 mx-auto">
-           <img class="img" src="pub/images/Dark Green Modern About Us Fashion Instagram Post.png" class="rounded">
+           <img class="img" src="pub/images/Social Media_ITEM.jpg" class="rounded">
         </div>
     </div>
 
