@@ -27,6 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="homepage">Home</a>
@@ -56,6 +57,17 @@
                     </li>
 
                 </ul>
+
+                <div class="dropdown">
+                                    <button class="dropbtn">Dropdown
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                  </div>
             </div>
         </div>
     </nav>
@@ -72,6 +84,10 @@
     <div class="row mt-3 mb-1">
         <h2>Create user</h2>
     </div>
+
+
+    </body>
+    </html>
 
 
         <c:if test="${bindingResult.hasErrors()}">
