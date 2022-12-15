@@ -2,17 +2,14 @@ package com.project.database.entity;
 
 import javax.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.Date;
 
 @Getter
 @Setter
 @ToString
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -48,8 +45,8 @@ public class Users {
     @Column(name = "zip")
     private String zip;
 
-    @Column(name = "create_date", nullable = false, updatable = false)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date createDate;
+//    @Column(name = "create_date", nullable = false, updatable = false)
+//    @Temporal(TemporalType.TIMESTAMP)
+//    private Date createDate;
 }
 

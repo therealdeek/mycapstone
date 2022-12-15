@@ -1418,3 +1418,37 @@ java.lang.NumberFormatException: For input string: "pr_price"
 2022-12-15 02:01:10.252  INFO 76009 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-12-15 02:01:10.273  INFO 76009 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-12-15 02:01:10.306  INFO 76009 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-15 06:49:15.352  INFO 80164 --- [restartedMain] com.project.MycapstoneApplication        : Starting MycapstoneApplication using Java 11.0.17 on MacBook-Air.lan with PID 80164 (/Users/therealdee_k/IdeaProjects/mycapstone/target/classes started by therealdee_k in /Users/therealdee_k/IdeaProjects/mycapstone)
+2022-12-15 06:49:15.353  INFO 80164 --- [restartedMain] com.project.MycapstoneApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-12-15 06:49:15.388  INFO 80164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-15 06:49:15.388  INFO 80164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-15 06:49:15.928  INFO 80164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-15 06:49:15.964  INFO 80164 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 5 JPA repository interfaces.
+2022-12-15 06:49:16.357  INFO 80164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-15 06:49:16.363  INFO 80164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-15 06:49:16.363  INFO 80164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-15 06:49:16.481  INFO 80164 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-12-15 06:49:16.488  INFO 80164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-15 06:49:16.488  INFO 80164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2022-12-15 06:49:16.600  INFO 80164 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-15 06:49:16.641  INFO 80164 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-15 06:49:16.744  INFO 80164 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-15 06:49:16.794  INFO 80164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-15 06:49:17.053  INFO 80164 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-15 06:49:17.063  INFO 80164 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-15 06:49:17.507  INFO 80164 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-15 06:49:17.513  INFO 80164 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 06:49:17.533  WARN 80164 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-15 06:49:17.944  INFO 80164 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ea1a740, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d8a30f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@461752b4, org.springframework.security.web.header.HeaderWriterFilter@f01ebdc, org.springframework.security.web.authentication.logout.LogoutFilter@7bad2fe1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@186b8770, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@729dd8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18111ce0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e32b716, org.springframework.security.web.session.SessionManagementFilter@2ef16c84, org.springframework.security.web.access.ExceptionTranslationFilter@139bd6cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14c9cb82]
+2022-12-15 06:49:18.172  INFO 80164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-15 06:49:18.199  INFO 80164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-15 06:49:18.206  INFO 80164 --- [restartedMain] com.project.MycapstoneApplication        : Started MycapstoneApplication in 3.309 seconds (JVM running for 3.712)
+2022-12-15 06:49:39.594  INFO 80164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-15 06:49:39.595  INFO 80164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-15 06:49:39.598  INFO 80164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-12-15 06:50:14.288  INFO 80164 --- [http-nio-8080-exec-7] com.project.controller.AboutController   : Index controller products request method
+2022-12-15 06:50:24.099  INFO 80164 --- [http-nio-8080-exec-6] com.project.controller.CartController    : Index controller products request method
+2022-12-15 06:50:27.998  INFO 80164 --- [http-nio-8080-exec-4] com.project.controller.FollowController  : Index controller products request method
+2022-12-15 06:51:18.702  INFO 80164 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-15 06:51:18.706  INFO 80164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-15 06:51:18.724  INFO 80164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

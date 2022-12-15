@@ -77,7 +77,7 @@ public class SignupController {
             users.setCity(form.getCity());
             users.setState(form.getState());
             users.setZip(form.getZip());
-            users.setCreateDate(new Date());
+            //users.setCreateDate(new Date());
 
             usersDAO.save(users);
 
