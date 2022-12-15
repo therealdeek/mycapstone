@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="home">Home</a>
+                        <a class="nav-link" href="homepage">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about">About</a>
@@ -55,7 +55,7 @@
                         <a class="nav-link" href="follow">Support Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login">Login</a>
+                        <a class="nav-link" href="/users/login">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="createusers">Signup</a>
@@ -81,59 +81,35 @@
 
 
         <div class="row mx-auto container-fluid">
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="pub/images/T-Shirt-removebg-preview.png" alt="">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Tee Shirt</h5>
-                    <h4 class="p-price">$15.00</h4>
-                    <button class="buy-btn">Add to cart</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="pub/images/BaseBall_Hat-removebg-preview.png" alt="">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Wristband</h5>
-                    <h4 class="p-price">$5.00</h4>
-                    <button class="buy-btn">Add to cart</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="pub/images/Silicone_Wristband-removebg-preview.png" alt="">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">B-ball Cap</h5>
-                    <h4 class="p-price">$25.00</h4>
-                    <button class="buy-btn">Add to cart</button>
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-12">
-                    <img class="img-fluid mb-3" src="pub/images/Crew_Socks-removebg-preview.png" alt="">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Crew Socks</h5>
-                    <h4 class="p-price">$10.00</h4>
-                    <button class="buy-btn">Add to cart</button>
-                </div>
+            <div>
 
+            </div>
+
+<!-- Define a list of image URLs -->
+<c:set var="imageUrls" value="${['pub/images/Crew_Socks-removebg-preview.png',
+                                 'pub/images/BaseBall_Hat-removebg-preview.png',
+                                 'pub/images/Silicone_Wristband-removebg-preview.png',
+                                 'pub/images/T-Shirt-removebg-preview.png']}" />
+
+
+
+
+            <c:forEach items="${products}" var="product">
+
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="${product.images}" alt="">
+                     <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h5 class="p-name">${product.name}</h5>
+                    <h4 class="p-price">$${product.price}.00</h4>
+                    <button class="buy-btn">Add to cart</button>
+                </div>
+            </c:forEach >
 
         </div>
 

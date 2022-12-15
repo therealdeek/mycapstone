@@ -13,7 +13,7 @@
             </tr>
           </thead>
           <tbody>
-            <c:forEach var="user" items="${users}">
+            <c:forEach items="${users}" var="user" >
               <tr>
                 <td>${users.id}</td>
                 <td>${users.name}</td>

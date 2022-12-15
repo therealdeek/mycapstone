@@ -20,6 +20,4 @@ public interface ProductsDAO extends JpaRepository<Products, Long> {
     List<Products> findByPrice(Integer price);
 
 
-
-
 }

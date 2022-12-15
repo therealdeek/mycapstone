@@ -34,5 +34,8 @@ public class Products {
     @Column(name = "desc")
     private String desc;
 
+    @Column(name="images")
+    private String images;
+
 
 }

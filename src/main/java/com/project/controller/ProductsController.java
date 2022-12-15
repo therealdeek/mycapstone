@@ -27,7 +27,7 @@ public class ProductsController {
     public ModelAndView search(@RequestParam(value = "price", required = false) Integer price) {
         ModelAndView response = new ModelAndView();
         response.setViewName("products");
-        List<Products> products = productsDAO.findByPrice(price);
+        List<Products> products = productsDAO.findAll();
         response.addObject("products", products);
 
         return response;

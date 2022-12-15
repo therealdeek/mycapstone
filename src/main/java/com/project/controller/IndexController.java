@@ -40,12 +40,12 @@ public class IndexController {
     private String variable;
 
 
-    @RequestMapping(value = {"/","/index.html"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/homepage"}, method = RequestMethod.GET)
     public ModelAndView slash(@RequestParam(required = false) String firstName,
                               @RequestParam(required = false) String email){
 
         ModelAndView response = new ModelAndView();
-        response.setViewName("search");
+        response.setViewName("homepage");
 
         response.addObject("name", "David");
 

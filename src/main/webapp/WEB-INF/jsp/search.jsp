@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Search</title>
+    <link href="pub/css/follow.css" rel="stylesheet">
 </head>
 
 <body>

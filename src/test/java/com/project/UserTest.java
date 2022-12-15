@@ -2,8 +2,10 @@ package com.project;
 
 
 import com.project.database.entity.Users;
+import org.junit.jupiter.api.Assertions;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.testng.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import java.util.Date;
 
@@ -39,6 +41,15 @@ import static org.assertj.core.api.Assertions.assertThat;
             user.setPassword("newP@ssw0rd");
             Assert.assertEquals("newP@ssw0rd", user.getPassword());
         }
+
+        @Test
+        @Ignore
+        public void test(){
+            Assertions.assertEquals("Hank", "Bob");
+        }
+
+
     }
+
 
 

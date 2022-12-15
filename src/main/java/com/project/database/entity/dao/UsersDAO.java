@@ -18,7 +18,7 @@ public interface UsersDAO extends JpaRepository<Users, Long> {
 
     public Users findById(Integer id);
 
-    @Query(value = "SELECT * FROM users WHERE email = 'hank@hello.com'", nativeQuery = true)
+    @Query(value = "SELECT * FROM users WHERE email = :email", nativeQuery = true)
     public Users findByEmail(String email);
 
     @Query(value = "SELECT * FROM users where id > 3", nativeQuery = true)

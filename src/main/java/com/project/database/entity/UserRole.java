@@ -30,4 +30,6 @@ public class UserRole {
     @Column(name = "role_name")
     private String roleName;
 
+    @Column(name = "email")
+    private String email;
 }

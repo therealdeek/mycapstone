@@ -52,7 +52,7 @@ public class SignupController {
 
 
 
-    @RequestMapping(value = "/createusers", method = RequestMethod.POST)
+    @RequestMapping(value = "users/createusers", method = RequestMethod.POST)
     public ModelAndView createUsers(@Valid CreateUserForm form, BindingResult bindingResult) {
         ModelAndView response = new ModelAndView();
         response.setViewName("login_pages/createusers");
