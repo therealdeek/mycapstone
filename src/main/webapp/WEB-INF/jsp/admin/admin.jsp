@@ -2,12 +2,31 @@
 
 <jsp:include page="../include/header.jsp" />
 
-    <div class="container">
-        <div class="row mt-3 mb-1 justify-content-center">
-            <div class="col-4">
-            	<h2>Admin page secured</h2>
-            </div>
-        </div>
-    </div>
+    <h1>Users</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <c:forEach var="user" items="${users}">
+              <tr>
+                <td>${users.id}</td>
+                <td>${users.name}</td>
+                <td>${users.email}</td>
+                <td>
+                  <a href="viewUser?id=${user.id}">View</a>
+                  <a href="editUser?id=${user.id}">Edit</a>
+                  <a href="deleteUser?id=${user.id}" onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
+                </td>
+              </tr>
+            </c:forEach>
+          </tbody>
+        </table>
+
 
  <jsp:include page="../include/footer.jsp" />

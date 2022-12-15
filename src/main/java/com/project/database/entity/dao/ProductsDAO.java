@@ -16,7 +16,7 @@ public interface ProductsDAO extends JpaRepository<Products, Long> {
 
     public Products findById(Integer id);
 
-    @Query(value = "SELECT price FROM products where id= 9", nativeQuery = true)
+
     List<Products> findByPrice(Integer price);
 
 

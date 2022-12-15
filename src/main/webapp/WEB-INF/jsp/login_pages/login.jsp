@@ -1,6 +1,12 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+
 <jsp:include page="../include/header.jsp" />
+
+<c:if test="${param.showMessage eq 'true'}">
+      <p>This is the message that will be displayed only if the "showMessage"
+      <br>parameter is set to "true".</p>
+    </c:if>
 
     <div class="container">
         <div class="row mt-3 mb-1 justify-content-center">
