@@ -44,13 +44,13 @@
                         <a class="nav-link active" href="#">Support Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/users/login">Login</a>
+                        <a class="nav-link" href="/loginpage">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="users/createusers">Signup</a>
+                        <a class="nav-link" href="/createusers">Signup</a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+
                         <i class="fa-solid fa-cart-shopping"><span> 0 </span></i>
 
                     </li>
@@ -67,24 +67,7 @@
         </div>
     </div>
 
-    <p>Display some text when the checkbox is checked:</p>
 
-    <label for="myCheck">Checkbox:</label>
-    <input type="checkbox" id="myCheck" onclick="myFunction()">
-
-    <p id="text" style="display:none">"Don't Forget to Follow Us!"</p>
-
-    <script>
-    function myFunction() {
-      var checkBox = document.getElementById("myCheck");
-      var text = document.getElementById("text");
-      if (checkBox.checked == true){
-        text.style.display = "block";
-      } else {
-         text.style.display = "none";
-      }
-    }
-    </script>
 
 </section>
 

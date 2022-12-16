@@ -46,13 +46,13 @@
                         <a class="nav-link" href="follow">Support Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/users/login">Login</a>
+                        <a class="nav-link" href="/loginpage">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="users/createusers">Signup</a>
+                        <a class="nav-link" href="/createusers">Signup</a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+
                         <i class="fa-solid fa-cart-shopping"></i>
 
                     </li>
@@ -66,7 +66,8 @@
         <div class="container-fluid">
             <h5>Welcome To <span>Argot</span></h5>
             <p> We believe, just like the meaning of our namesake, your visit is our journey together!</p>
-            <button> Shop Now </button>
+            <button id="next-page-button"> Shop Now </button>
+
         </div>
     </section>
 
@@ -100,6 +101,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+
+        <button id="next-page-button">Products</button>
+
+        <script>
+          // Get a reference to the button
+          const button = document.getElementById('next-page-button');
+
+          // Add a click event listener to the button
+          button.addEventListener('click', function() {
+            // Navigate to the next page when the button is clicked
+            window.location.href = '/products';
+          });
+        </script>
+
 
 </body>
 

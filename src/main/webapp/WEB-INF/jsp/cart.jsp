@@ -45,13 +45,13 @@
                                 <a class="nav-link" href="follow">Support Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/users/login">Login</a>
+                                <a class="nav-link" href="/loginpage">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="users/createusers">Signup</a>
+                                <a class="nav-link" href="/createusers">Signup</a>
                             </li>
                             <li class="nav-item">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+
                                 <i class="fa-solid fa-cart-shopping"><span> 0 </span></i>
 
                             </li>

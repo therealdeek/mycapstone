@@ -38,7 +38,7 @@ public class LoginController {
 
     // this method is request mapping to show the actual login JSP page.
     // the URL here in the mapping is the same URL configured in spring security .loginPage
-    @RequestMapping(value = "/users/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/loginpage", method = RequestMethod.GET)
     public ModelAndView login() {
         ModelAndView response = new ModelAndView();
         response.setViewName("loginpage");

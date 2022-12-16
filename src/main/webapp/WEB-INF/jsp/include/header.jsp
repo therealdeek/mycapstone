@@ -21,7 +21,7 @@
 	<div class="row mt-1 mb-3 justify-content-center">
 		<div class="col-6">
 			<a href="/">Home</a> |
-			<a href="/users/createusers">Create Users</a> |
+			<a href="/createusers">Create Users</a> |
 
 			<sec:authorize access="hasAnyAuthority('ADMIN')">
 				<a href="/admin/admintest">Admin Test</a> |

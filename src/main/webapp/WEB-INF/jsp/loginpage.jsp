@@ -3,6 +3,8 @@
 
 <jsp:include page="include/header.jsp" />
 
+<link href="pub/css/follow.css" rel="stylesheet">
+
 
 <c:if test="${param.showMessage eq 'true'}">
       <p>This is the message that will be displayed only if the "showMessage"
@@ -36,30 +38,11 @@
 
             <div class="row justify-content-center">
 	            <div class="mt-2 mb-3 col-4">
-	            	<button type="submit" class="btn btn-primary">Submit</button>
+	            	<button type="submit" class="btn btn-dark">Submit</button>
 	             </div>
 	        </div>
         </form>
     </div>
-
-<div="container">
-    <h1>my radio buttons</h1>
-    <label class="container">One
-      <input type="radio" checked="checked" name="radio">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Two
-      <input type="radio" name="radio">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Three
-      <input type="radio" name="radio">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Four
-      <input type="radio" name="radio">
-      <span class="checkmark"></span>
-    </label>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
