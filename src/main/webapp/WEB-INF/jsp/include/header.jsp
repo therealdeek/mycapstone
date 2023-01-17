@@ -24,7 +24,7 @@
 			<a href="/createusers">Create Users</a> |
 
 			<sec:authorize access="hasAnyAuthority('ADMIN')">
-				<a href="/admin/admintest">Admin Test</a> |
+				<a href="/admin/admintest">Administrator</a> |
 			</sec:authorize>
 
 			<sec:authorize access="isAuthenticated()">

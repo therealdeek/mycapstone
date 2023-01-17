@@ -40,7 +40,7 @@ public class IndexController {
     private String variable;
 
 
-    @RequestMapping(value = {"/","/homepage"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/"}, method = RequestMethod.GET)
     public ModelAndView slash(@RequestParam(required = false) String firstName,
                               @RequestParam(required = false) String email){
 
@@ -97,7 +97,7 @@ public class IndexController {
     }
 
     @RequestMapping(value = {"/usersSubmit"}, method = {RequestMethod.POST, RequestMethod.GET})
-    public ModelAndView courseSubmit(@RequestParam(required = false) String firstName,
+    public ModelAndView usersSubmit(@RequestParam(required = false) String firstName,
                                      @RequestParam(required = false) String email) {
 
         ModelAndView response = new ModelAndView();
